@@ -25,15 +25,7 @@ string Customer::statement() {
 int Customer::bonus(Rental& each)
 {
 
-	// Начисление бонусных очков
-	int result = 0;
-	result++;
-
-	// Бонус за двухдневный прокат новинки
-	if ((each.getMovie().getPriceCode() == Movie::NEW_RELEASE) &&
-		each.getDaysRented() > 1)
-		result++;
-	return result;
+	return each.bonus();
 }
 
 double Customer::amountFor(Rental aRental)
