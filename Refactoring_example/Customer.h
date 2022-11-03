@@ -21,6 +21,7 @@ public:
 		return _name;
 	}
 	string statement();
+	int bonus(Rental& each);
 	double amountFor(Rental each);
 };
 
