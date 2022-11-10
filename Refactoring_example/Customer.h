@@ -23,5 +23,7 @@ public:
 	string statement();
 	int bonus(Rental& each);
 	double amountFor(Rental each);
+	double getTotalCharge();
+	int getTotalBonus();
 };
 
