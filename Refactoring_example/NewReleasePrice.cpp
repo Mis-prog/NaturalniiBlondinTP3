@@ -10,3 +10,14 @@ double NewReleasePrice::getCharge(int daysRented) {
 	return result;
 }
  
+int NewReleasePrice::bonus(int daysRented)
+{
+
+	// Начисление бонусных очков
+	int result = Price::bonus(daysRented);
+
+	// Бонус за двухдневный прокат новинки
+	if (daysRented > 1)
+		result++;
+	return result;
+}
