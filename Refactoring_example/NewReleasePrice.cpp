@@ -9,3 +9,4 @@ double NewReleasePrice::getCharge(int daysRented) {
 	result += daysRented * 3;
 	return result;
 }
+ 
