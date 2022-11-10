@@ -5,5 +5,6 @@ class NewReleasePrice :
 {
 public:
     virtual int getPriceCode() override;
+    virtual double getCharge(int daysRented);
 };
 
