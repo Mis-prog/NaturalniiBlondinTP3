@@ -6,4 +6,3 @@ class ChildrenPrice :
 public:
     virtual int getPriceCode() override;
 };
-
